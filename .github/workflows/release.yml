@@ -112,9 +112,8 @@ jobs:
             $assets += $archive.FullName
             $assets += $checksumPath
           }
-          # Refuse to overwrite an existing release; published assets stay immutable.
-          & gh release view $env:RELEASE_TAG --repo $env:GH_REPO *> $null
-          if ($LASTEXITCODE -eq 0) { throw 'This release already exists. Use a new version tag.' }
+          # The create command rejects an existing release. Avoid using an
+          # expected "not found" stderr response as a PowerShell 5.1 probe.
           $notes = "Windows x64 complete package: extract it and run Install.cmd. Includes startup art, theme runtime and pet import assets. Sign in to your own Codex account; import the pet separately using docs/PET-IMPORT.md."
           $notesPath = Join-Path $env:RUNNER_TEMP 'cod-release-notes.txt'
           [IO.File]::WriteAllText($notesPath, $notes, (New-Object Text.UTF8Encoding($false)))
