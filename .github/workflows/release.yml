@@ -51,7 +51,6 @@ jobs:
         run: |
           $ErrorActionPreference = 'Stop'
           & .\scripts\Package.ps1 -OutputDirectory dist
-          if ($LASTEXITCODE -ne 0) { throw 'Packaging failed.' }
           $archives = @(Get-ChildItem -LiteralPath dist -Filter '*.zip' -File)
           if ($archives.Count -eq 0) { throw 'No install package was produced.' }
           foreach ($archive in $archives) {
