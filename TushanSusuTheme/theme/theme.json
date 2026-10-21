@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 4,
+  "kind": "theme",
+  "appearance": "light",
+  "id": "tushan-susu-blossom",
+  "name": "涂山苏苏 · 花映青山",
+  "description": "苏苏与桃花山水，搭配暖白面板、莓粉和青瓷绿，保持聊天与代码清晰可读。",
+  "version": "1.0.0",
+  "author": "Personal Codex Theme",
+  "metadata": {
+    "localized": {
+      "en": {
+        "name": "Tu Shan Susu · Blossom Reverie",
+        "description": "Susu and peach-blossom mountains with warm cream surfaces, berry-pink accents and celadon highlights."
+      }
+    }
+  },
+  "assets": {
+    "background": "assets/susu-background.png"
+  },
+  "colors": {
+    "accent": "#A84366",
+    "secondary": "#3D6B61",
+    "text": "#382C36",
+    "textSecondary": "#69535E",
+    "muted": "#715462",
+    "link": "#914C65",
+    "inputText": "#3C2D38",
+    "placeholder": "#745866",
+    "codeText": "#493E4E",
+    "panel": "#FFF8F2",
+    "border": "#A17887",
+    "success": "#386B5A",
+    "warning": "#7F571F",
+    "danger": "#A63F56",
+    "info": "#42678C"
+  },
+  "typography": {
+    "uiFamily": "Microsoft YaHei UI",
+    "codeFamily": "Cascadia Code",
+    "scale": 1,
+    "uiSize": 14,
+    "codeSize": 13,
+    "uiWeight": 400,
+    "codeWeight": 400,
+    "lineHeight": 1.6,
+    "displayFamily": "Microsoft YaHei UI",
+    "displaySize": 32,
+    "displayWeight": 500,
+    "displayLineHeight": 1.4,
+    "displayLetterSpacing": 0.02
+  },
+  "home": {
+    "welcome": {
+      "localized": {
+        "zh-CN": { "lines": ["花开涂山，灵感正好。"] },
+        "en": { "lines": ["A little blossom, a new idea."] }
+      }
+    }
+  },
+  "background": {
+    "positionX": 0.34,
+    "positionY": 0.5,
+    "scale": 1,
+    "blur": 1.5,
+    "brightness": 0.96,
+    "overlay": 0.28,
+    "safeArea": "none",
+    "taskMode": "full",
+    "taskOpacity": 0.45
+  },
+  "surfaces": {
+    "baseOpacity": 0.92,
+    "elevatedOpacity": 0.97,
+    "terminalOpacity": 0.98,
+    "blur": 10
+  },
+  "decorations": [],
+  "layout": {
+    "heroHeight": 380,
+    "cardColumns": 4,
+    "composerWidth": 0.74,
+    "sidebarDensity": "comfortable",
+    "moduleGap": 16,
+    "modules": [
+      { "id": "sidebar", "order": 0, "visible": true, "size": "regular", "align": "stretch", "spacing": 12 },
+      { "id": "topbar", "order": 1, "visible": true, "size": "regular", "align": "stretch", "spacing": 12 },
+      { "id": "hero", "order": 2, "visible": true, "size": "expanded", "align": "stretch", "spacing": 16 },
+      { "id": "suggestions", "order": 3, "visible": true, "size": "regular", "align": "stretch", "spacing": 16 },
+      { "id": "project-picker", "order": 4, "visible": true, "size": "regular", "align": "stretch", "spacing": 16 },
+      { "id": "composer", "order": 5, "visible": true, "size": "regular", "align": "center", "spacing": 12 },
+      { "id": "task-background", "order": 6, "visible": true, "size": "regular", "align": "stretch", "spacing": 0 },
+      { "id": "content-layer", "order": 7, "visible": true, "size": "regular", "align": "stretch", "spacing": 12 }
+    ]
+  },
+  "rights": {
+    "licenseId": "LicenseRef-Personal-AI-Theme",
+    "attribution": "AI-generated Tu Shan Susu themed illustration created for this user's personal Codex customization; character and franchise names remain with their respective rights holders.",
+    "localOnly": true
+  },
+  "interfaceImages": {
+    "profileAvatarSize": 24,
+    "suggestionIconSize": 20,
+    "projectIconSize": 16
+  },
+  "composition": { "layers": [] }
+}

@@ -1,0 +1,18 @@
+This launcher is inspired by and adapts native application-window discovery,
+process path filtering, geometry easing and Windows DWM thumbnail API usage from:
+
+Dragon Codex Boot
+https://github.com/yushua0808-cpu/dragon-codex-boot
+Source reviewed: main/src/DragonCodexBoot.cs, 2026-10-20
+Copyright (c) 2026 Dragon Codex Boot contributors
+MIT License (the complete license text is included in LICENSE.txt)
+
+This personal theme includes an AI-generated depiction of Tu Shan Susu from
+Fox Spirit Matchmaker (狐妖小红娘). It is unofficial fan artwork and is not an
+official OpenAI or Fox Spirit Matchmaker product. Existing character and brand
+rights remain with their respective owners.
+
+The program uses Windows / .NET Framework / DWM APIs already on this computer.
+It does not modify Codex program files, store credentials, connect to a server,
+set up a background service, or scan disks. AutoReplaceEntrypoints is false;
+shortcut integration, if supplied separately, is explicit and reversible.

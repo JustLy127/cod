@@ -1,0 +1,18 @@
+Mode: Built-in image_gen tool (not CLI/API fallback)
+Intent: generate a new image from text
+Generated source: original AI artwork; asset included in this repository.
+Workspace asset: media/susu-opening.png
+
+Final prompt:
+Use case: illustration-story
+Asset type: final hero artwork for a Windows Codex desktop startup animation, landscape 16:9, composed for 1920 x 1080 display.
+Primary request: Create a beautiful, polished new anime illustration of 涂山苏苏 (Tu Shan Susu) from 狐妖小红娘 / Fox Spirit Matchmaker, unmistakably the actual character rather than a generic fox girl.
+Subject: Wholesome cute youthful fox-spirit girl with long golden-orange hair, her recognizable large upright orange fox ears with creamy inner fur, green-cyan eyes, small cheerful gentle smile, red ribbon hair accent. Recognizable loose pink Chinese robe with broad creamy-white sleeves and pale green sleeve accents, a teal waistband with purple bow/ribbon accents. Modest age-appropriate covered outfit, no sensual posing. She stands in a relaxed three-quarter pose, one hand delicately raised to meet a drifting peach blossom petal, looking kindly toward the viewer.
+Scene/backdrop: Enchanted peach-blossom forest at blue hour, an ancient flowering tree arcing over the upper left, layers of misty celadon mountains and a quiet reflective stream in the distance. A few luminous petals drifting diagonally across the scene, tiny warm firefly bokeh. Calm magical atmosphere.
+Style/medium: High-quality 2D Chinese fantasy anime opening key visual, clean elegant fine linework, expressive on-model character face, softly painted cinematic background, delicate luminous shading, refined professional composition.
+Composition/framing: Wide 16:9. Character from upper thighs upward occupies the LEFT THIRD, face centered approximately 30 percent from left and 40 percent from top, ears fully inside frame, hair flowing gently toward the left and lower-left. The RIGHT HALF should stay substantially calm, spacious and low-detail: atmospheric dark desaturated celadon and deep indigo mist, subtle light, no dominant objects, for a later real desktop window transition and native title overlay. Keep important details away from all edges. A few petals may bridge the two halves without clutter.
+Lighting/mood: Soft warm peach rim light on hair and shoulders from upper left, cool teal ambient fill, tender hopeful magical welcome, polished dreamy but crisp character rendering.
+Color palette: Peach pink, warm golden-orange, creamy white, celadon green, deep muted indigo; luminous warm character against darker calm right-side atmosphere.
+Text: None.
+Constraints: Single character only. No text, no logos, no watermark, no interface, no window, no title lettering, no mock computer screen. Correct hands and fingers. No extra ears or limbs, no exaggerated anatomy. Opaque full-scene background.
+

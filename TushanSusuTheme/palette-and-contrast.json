@@ -1,0 +1,91 @@
+{
+  "name": "涂山苏苏 · 花映青山",
+  "description": "以樱粉、月白与青瓷绿搭配苏苏插画，保留清晰的文字与安静的阅读空间。",
+  "welcomeLine": "花开涂山，灵感正好。",
+  "mode": "light",
+  "palette": {
+    "accent": "#A84366",
+    "secondary": "#3D6B61",
+    "text": "#382C36",
+    "textSecondary": "#69535E",
+    "muted": "#715462",
+    "link": "#914C65",
+    "inputText": "#3C2D38",
+    "placeholder": "#745866",
+    "codeText": "#493E4E",
+    "panel": "#FFF8F2",
+    "border": "#D8BBB9",
+    "success": "#386B5A",
+    "warning": "#7F571F",
+    "danger": "#A63F56",
+    "info": "#42678C"
+  },
+  "optionalPalette": {
+    "controlBorder": "#A17887",
+    "accentSoft": "#F5DEE6",
+    "secondarySoft": "#DDECE5",
+    "codePanel": "#F5F0ED",
+    "selection": "#EAC1D0"
+  },
+  "contrast": {
+    "referencePanel": "#FFF8F2",
+    "translucentPanelWorstCase": "#EBE4DF",
+    "translucentPanelDefinition": "92% #FFF8F2 over black (rounded sRGB composition)",
+    "ratiosOnPanel": {
+      "accent": 5.45,
+      "secondary": 5.75,
+      "text": 12.62,
+      "textSecondary": 6.65,
+      "muted": 6.34,
+      "link": 5.83,
+      "inputText": 12.29,
+      "placeholder": 5.99,
+      "codeText": 9.59,
+      "success": 5.84,
+      "warning": 6.08,
+      "danger": 5.76,
+      "info": 5.62
+    },
+    "ratiosOnWorstCaseTranslucentPanel": {
+      "accent": 4.56,
+      "secondary": 4.81,
+      "text": 10.56,
+      "textSecondary": 5.57,
+      "muted": 5.31,
+      "link": 4.87,
+      "inputText": 10.28,
+      "placeholder": 5.01,
+      "codeText": 8.02,
+      "success": 4.88,
+      "warning": 5.08,
+      "danger": 4.82,
+      "info": 4.70
+    },
+    "controlBorderOnPanel": 3.60,
+    "controlBorderOnWorstCaseTranslucentPanel": 3.01,
+    "notes": [
+      "All body and semantic foreground colors exceed 4.5:1 on cream panels and on the conservative 92% cream-over-black composition.",
+      "The border token is decorative. Use optional controlBorder for boundaries required to identify a control, and accent for keyboard focus.",
+      "Use white foreground on the solid accent fill (approximately 5.74:1)."
+    ]
+  },
+  "background": {
+    "asset": "outputs/FoxSpiritCodexBoot/media/susu-opening.png",
+    "unchanged": true,
+    "size": "cover",
+    "position": "34% center",
+    "brightness": 0.96,
+    "blurPx": 1.5,
+    "globalCreamOverlayOpacity": 0.28,
+    "readingPanelOpacity": 0.92,
+    "inputPanelOpacity": 0.97,
+    "codePanelOpacity": 0.98,
+    "sidebarPanelOpacity": 0.92,
+    "surfaceBackdropBlurPx": 10,
+    "placementNotes": [
+      "The character is in the left half, with the face near 31% x / 30% y. Preserve the complete original image and favor the left crop on narrower windows.",
+      "Let wallpaper show mainly in surrounding whitespace, the upper header and gaps; use stable cream surfaces behind conversations, navigation labels and the composer.",
+      "Keep the central reading area visually calm. Avoid additional animated particles and large decorative greetings during work."
+    ]
+  }
+}

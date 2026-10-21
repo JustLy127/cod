@@ -1,0 +1,15 @@
+{
+  "node": {
+    "version": "24.19.0",
+    "url": "https://nodejs.org/dist/v24.19.0/win-x64/node.exe",
+    "sha256": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237",
+    "file": "node-v24.19.0-win-x64.exe"
+  },
+  "skin": {
+    "version": "0.4.2",
+    "url": "https://github.com/u2bo/OpenChatGPTSkin/releases/download/v0.4.2/OpenChatGPTSkin_0.4.2_windows_x64.zip",
+    "sha256": "63c569a27401095fd5e8645ccf071b7249e99ea345c870f085f1db1d3021760c",
+    "exeSHA256": "623e25f9b0d65361c53922387f61dab1f27985464fadc3c9a94d16692f8d8b91",
+    "file": "OpenChatGPTSkin_0.4.2_windows_x64.zip"
+  }
+}

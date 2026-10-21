@@ -1,0 +1,25 @@
+This personal migration bundle contains:
+
+Fox Spirit Codex Boot 1.0.4, including MIT-licensed methods adapted from
+https://github.com/yushua0808-cpu/dragon-codex-boot
+See FoxSpiritCodexBoot/LICENSE.txt and THIRD-PARTY-NOTICES.txt.
+
+OpenChatGPTSkin v0.4.2 command-line runtime and reviewed cleanup adapter:
+https://github.com/u2bo/OpenChatGPTSkin/releases/tag/v0.4.2
+See TushanSusuTheme/runtime/LICENSE and compat/UPSTREAM-LICENSE.txt.
+Unrelated bundled themes and web studio are omitted from this migration copy.
+
+Node.js v24.19.0 Windows x64, downloaded unchanged from the official versioned distribution:
+https://nodejs.org/
+The complete Node.js and embedded third-party licenses are included in
+tools/node/LICENSE.txt, obtained from the official versioned source:
+https://raw.githubusercontent.com/nodejs/node/v24.19.0/LICENSE
+
+Tu Shan Susu pet by legeling:
+https://github.com/legeling/awesome-codex-pet/tree/022aea52f75841d31f57b7596479ebb425480a50/pets/tushan-susu--legeling
+Pet assets: CC BY-NC 4.0. Attribution and non-commercial use are required.
+See TushanSusuPet/ASSETS-LICENSE.md, LICENSE, and original submission.json.
+
+The opening/background artwork is AI-generated unofficial fan artwork.
+Character and product names belong to their respective rights holders.
+This bundle does not include the Codex client, account credentials or chats.

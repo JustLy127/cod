@@ -1,0 +1,19 @@
+{
+  "DisplayName": "涂山苏苏 · Codex 启动动画",
+  "Artwork": "media/susu-opening.png",
+  "AppLaunch": "shell:AppsFolder\\OpenAI.Codex_2p2nqsd0c76g0!App",
+  "ProcessNames": [
+    "ChatGPT",
+    "Codex"
+  ],
+  "ProcessPathContains": "OpenAI.Codex_",
+  "DurationSeconds": 7.0,
+  "HoldAtSeconds": 5.2,
+  "TransitionSeconds": 1.4,
+  "MaxWaitSeconds": 120.0,
+  "PlayerWidth": 1280,
+  "PlayerHeight": 720,
+  "WindowSizing": "MatchCodex",
+  "MaximizeColdStart": true,
+  "AutoReplaceEntrypoints": false
+}

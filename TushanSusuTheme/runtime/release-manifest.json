@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 3,
+  "product": "OpenChatGPTSkin",
+  "version": "0.4.2",
+  "target": "windows-x64",
+  "roles": [
+    "studio",
+    "controller",
+    "runtime",
+    "theme"
+  ],
+  "host": {
+    "language": "go",
+    "goVersion": "go1.25.12",
+    "commit": "b7a07e5ff06ec8b2809501af7d3aee8882d03be6",
+    "dirty": false,
+    "entry": {
+      "path": "OpenChatGPTSkin.exe",
+      "bytes": 11554816,
+      "sha256": "623e25f9b0d65361c53922387f61dab1f27985464fadc3c9a94d16692f8d8b91"
+    }
+  },
+  "contracts": {
+    "studio": 2,
+    "runtime": 1,
+    "theme": 4,
+    "data": 1,
+    "sha256": "c215e0f9ca0e5825e8fcb21bc457647e4136e04702c25ffdd62df3c507632da2"
+  },
+  "cdpAdapter": {
+    "sha256": "2a6c596810108fc5b5b14fb37c64acdcab8affa467404b06dfc2fe3162748f62"
+  },
+  "themes": {
+    "catalogSchemaVersion": 1,
+    "builtins": [
+      "future-idol-cyan",
+      "glacier-aurora",
+      "goku-saiyan-engine",
+      "hoshimiya-ichigo-shining-stage",
+      "mountain-mist",
+      "rose-carpet-star",
+      "tibo-cyber-core",
+      "yua-mikami-starlight"
+    ]
+  },
+  "image": {
+    "implementation": "gen2brain-webp-wasm2go-nodynamic-plus-internal-pipeline",
+    "cgo": false
+  },
+  "sidecars": [],
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1577,
+      "sha256": "8926542b5794e61367c6b486e7a710fbd87446a51debe88fcdd3c6755d95e9eb"
+    },
+    {
+      "path": "OpenChatGPTSkin.exe",
+      "bytes": 11554816,
+      "sha256": "623e25f9b0d65361c53922387f61dab1f27985464fadc3c9a94d16692f8d8b91"
+    },
+    {
+      "path": "README.en.md",
+      "bytes": 30288,
+      "sha256": "b1d2b42a9afb4fc1a3b06f3e4ddc490a653e64434bc0035216551693df37402e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 28406,
+      "sha256": "e1faf1b7e37e399199e4273742a628ade4a856e11525683fa01d69a97e2714fe"
+    },
+    {
+      "path": "apps/theme-studio/dist/index.html",
+      "bytes": 510899,
+      "sha256": "83eeed1ec3dfe914d8e4f21dfc73b109a76558eca80c3504643e78ff3adcd309"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/LICENSE.md",
+      "bytes": 1596,
+      "sha256": "b54737f0d95405dfdd7c2de37ed0875e482873fe2e13b712d13237654ebe0811"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/assets/background.webp",
+      "bytes": 304512,
+      "sha256": "951fbbfa8e8b2543ca0172cc47edf6e85b1df3a5bd1388975741276df102b52b"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/assets/profile-avatar.webp",
+      "bytes": 18092,
+      "sha256": "0c0bdb0018e3625482dd335b6f6618056014158561abd2a02ed66088bc31f2d8"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/assets/suggestion-card1.webp",
+      "bytes": 4102,
+      "sha256": "ed2a9736680e0564af8a4002d871eaa677ac1f096af5db888ba5f7d8f9ab1c92"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/assets/suggestion-card2.webp",
+      "bytes": 11688,
+      "sha256": "65a5ac543cf5e050004475d5dca91af6340a81480437c8a45cbc6fa7f2b0c9e7"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/assets/suggestion-card3.webp",
+      "bytes": 4102,
+      "sha256": "ed2a9736680e0564af8a4002d871eaa677ac1f096af5db888ba5f7d8f9ab1c92"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/assets/suggestion-card4.webp",
+      "bytes": 11688,
+      "sha256": "65a5ac543cf5e050004475d5dca91af6340a81480437c8a45cbc6fa7f2b0c9e7"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/manifest.json",
+      "bytes": 1258,
+      "sha256": "ff1af96e737c88841db01213fe1c204f5deb180ce5466a9623cba7aa8f380215"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/preview.webp",
+      "bytes": 82246,
+      "sha256": "ce8ef3a0967f1495b57da835c8e5ef312d961175a1038ae556b11c66ff1a65f5"
+    },
+    {
+      "path": "themes/builtin/future-idol-cyan/theme.json",
+      "bytes": 4010,
+      "sha256": "1fa4dec6d223dfd82904b21f3a6961c41a723ff1d5dba3e5c4510959fa4b2379"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/LICENSE.md",
+      "bytes": 1556,
+      "sha256": "b1021293975649a2da6d297febb79e9e5fb8d4ff3cfa555219feea490769cea8"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/assets/background.webp",
+      "bytes": 258216,
+      "sha256": "17f369c5947134085dd5a4e5b0275f3064fa75dd079e9906aad4d019539738f4"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/assets/profile-avatar.webp",
+      "bytes": 14312,
+      "sha256": "b215b9b215cc371685bc602a118e69dde904c50e6f6cb67f9f84d5096e479be4"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/assets/suggestion-card1.webp",
+      "bytes": 3186,
+      "sha256": "0684e1f8d4403c98f5cae2a0b88b21207a83c10eb10dc93abdc28ad5e0ac4a4b"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/assets/suggestion-card2.webp",
+      "bytes": 8886,
+      "sha256": "79300cd1ddb3887e5ba68d64e140b41c09ac6c2ae0b60b5213fe1f0061765073"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/assets/suggestion-card3.webp",
+      "bytes": 3186,
+      "sha256": "0684e1f8d4403c98f5cae2a0b88b21207a83c10eb10dc93abdc28ad5e0ac4a4b"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/assets/suggestion-card4.webp",
+      "bytes": 8886,
+      "sha256": "79300cd1ddb3887e5ba68d64e140b41c09ac6c2ae0b60b5213fe1f0061765073"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/manifest.json",
+      "bytes": 1254,
+      "sha256": "6f97ca7864ba9abb4ad0ee84e2f33756b9a4406d0dd76f95c0db05169ecc1582"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/preview.webp",
+      "bytes": 66698,
+      "sha256": "2c6f39f7f8407e6741a9a41407d264c814f6a95a920fc27e1cb6d41754b5b4ea"
+    },
+    {
+      "path": "themes/builtin/glacier-aurora/theme.json",
+      "bytes": 3922,
+      "sha256": "73495064888ebe3f2144a6ab4496b1fa8387c6646f573324e828c5f5fcdf7998"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/LICENSE.md",
+      "bytes": 2649,
+      "sha256": "75eaaaa3ffb8143eb6843fe0b9f81122fd783220b6790bdfd09ec41c3f8c75f7"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/assets/background.webp",
+      "bytes": 275842,
+      "sha256": "18aa5ec6ec4c08a241dda7789948b312d005b3cf599f319f468c658a1ef87ef1"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/assets/profile-avatar.webp",
+      "bytes": 24298,
+      "sha256": "a00669d75447963a0b39a31781a8baa98bf7990e6ed96d48c28f033b17319e5d"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/assets/suggestion-card1.webp",
+      "bytes": 18460,
+      "sha256": "f56b7c050d5c98314154e730e3d8363a280bcd21dea55a95b861b3b406371be9"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/assets/suggestion-card2.webp",
+      "bytes": 8140,
+      "sha256": "a7872dc0e1915e183f0ac9caa1438825a252e9ee7013a6b01a3009d8fa8d7705"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/assets/suggestion-card3.webp",
+      "bytes": 5704,
+      "sha256": "aec34b5590f1f83b0309436454f1692def78737567afdfa302cf0bd1d6c2c6cc"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/assets/suggestion-card4.webp",
+      "bytes": 9562,
+      "sha256": "8cea699e86ad63ae6fe119adaae238735746376fb992323f0909f104443734ee"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/manifest.json",
+      "bytes": 1259,
+      "sha256": "104d894feee81dc400489fe1b65dfea1284c5d9662aa1e9dc7f8b62569321a1e"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/preview.webp",
+      "bytes": 80008,
+      "sha256": "d04e6ee3f729b1de9c9c253f83e6f7e69c52e10b07ef14146414d4b8fc4a3bc5"
+    },
+    {
+      "path": "themes/builtin/goku-saiyan-engine/theme.json",
+      "bytes": 4880,
+      "sha256": "c77146f2dbcfc85750a2bb41d21a5b50b66721ebcc5826d303a107177c9893d9"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/LICENSE.md",
+      "bytes": 2637,
+      "sha256": "125d2ca4d166dc7c2157617f00f189fc1f1a9286fae4b7e49d6e85b87fd0e997"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/assets/background.webp",
+      "bytes": 280902,
+      "sha256": "8e31d2066181f27bd9d018eaae43d3c8d9de0f8e89e843a675507d5952fa36f2"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/assets/profile-avatar.webp",
+      "bytes": 20698,
+      "sha256": "dc3504b7e1501f13b2a2c29eda2e285a8a56d46b24cb2f323be351c32ded87f0"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/assets/suggestion-card1.webp",
+      "bytes": 9030,
+      "sha256": "09ec6fe6267853dae5ebd9c1a8ed4ff2d8e755f09554a53ec85037abb9533aac"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/assets/suggestion-card2.webp",
+      "bytes": 8034,
+      "sha256": "c250c529c7592fa13ae8193e9ab34b4ae75b5112a2be8f507aa6e4c496f3d73d"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/assets/suggestion-card3.webp",
+      "bytes": 8706,
+      "sha256": "45bf8243ccb5340dafa1f376d6ea214a4de5baefbbdd97c521e2252011c6c3f1"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/assets/suggestion-card4.webp",
+      "bytes": 6554,
+      "sha256": "acbde5449d6d2e6a4a33d6af8ebbeb8038c491c8d6d5ac432f52676d8b9351b3"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/manifest.json",
+      "bytes": 1270,
+      "sha256": "7959062271dceb49f19ceb5fc2e8cd46bbde0281240c4636ff45e7ab218cda8b"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/preview.webp",
+      "bytes": 87280,
+      "sha256": "b21f3d1b8d66b995c2f035b7cc24a11c5d837104e5c7bffafaa07910da109746"
+    },
+    {
+      "path": "themes/builtin/hoshimiya-ichigo-shining-stage/theme.json",
+      "bytes": 5008,
+      "sha256": "4d4a4a16e32fe909a869016712d041d1b42c602da2c1fdca2c2b03f979725c90"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/LICENSE.md",
+      "bytes": 1570,
+      "sha256": "37880b0c9befe2c61968f18a2f2f2536bc4d301c861b8f7f3b25c06cac2332d2"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/assets/background.webp",
+      "bytes": 168214,
+      "sha256": "0775ffb516fdb1bfa417d1d063f6fc5b4fcf05adad4df28910e6e3512f5679cf"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/assets/profile-avatar.webp",
+      "bytes": 11364,
+      "sha256": "d5622f04102f2035bc2b937a17609cf84d255f867d704ff04ef606a1ae58bbbf"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/assets/suggestion-card1.webp",
+      "bytes": 4082,
+      "sha256": "db6f56aebe57dcca77b59e771cb0be09c15573606f339c059e04ba5d0ad7cb31"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/assets/suggestion-card2.webp",
+      "bytes": 6924,
+      "sha256": "9c0ad2e83bea6fef214478a71d2b3635b6e1ccea0075c384489f93c85be2abf7"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/assets/suggestion-card3.webp",
+      "bytes": 4082,
+      "sha256": "db6f56aebe57dcca77b59e771cb0be09c15573606f339c059e04ba5d0ad7cb31"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/assets/suggestion-card4.webp",
+      "bytes": 6924,
+      "sha256": "9c0ad2e83bea6fef214478a71d2b3635b6e1ccea0075c384489f93c85be2abf7"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/manifest.json",
+      "bytes": 1253,
+      "sha256": "32cf17c2756144b8846b4f3f6faeded39a03c1cc71866c83aef386cafc422d8d"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/preview.webp",
+      "bytes": 44712,
+      "sha256": "f218126b72559add79203152980dd98b074a1cf23229e7d388059eb7367f3390"
+    },
+    {
+      "path": "themes/builtin/mountain-mist/theme.json",
+      "bytes": 3934,
+      "sha256": "b3535eccfb93567963dac1aa9533b4e07d6cbffd4bab625a32bdfd534b1d2c33"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/LICENSE.md",
+      "bytes": 1602,
+      "sha256": "b2d105de3601aa8957a5e73178d6374636aa168099972de01097f04566671190"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/assets/background.webp",
+      "bytes": 221512,
+      "sha256": "291f180e02d8c1c2b62428d66bef895920d389ac8e9e8e36672ffd934fbcba05"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/assets/profile-avatar.webp",
+      "bytes": 17618,
+      "sha256": "c445f2c2e1a7f31d1ce90d94b13a51b4856a9b3004b79781d61f2f88db916743"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/assets/suggestion-card1.webp",
+      "bytes": 2756,
+      "sha256": "fb93e602093813f1aa3d54d9701a3949392b4189625ff3d06b245bdc3e9b8165"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/assets/suggestion-card2.webp",
+      "bytes": 10744,
+      "sha256": "255d3441e01faf7df1169acad343601acc7fb92cb8015b6f92660d64467f486a"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/assets/suggestion-card3.webp",
+      "bytes": 2756,
+      "sha256": "fb93e602093813f1aa3d54d9701a3949392b4189625ff3d06b245bdc3e9b8165"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/assets/suggestion-card4.webp",
+      "bytes": 10744,
+      "sha256": "255d3441e01faf7df1169acad343601acc7fb92cb8015b6f92660d64467f486a"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/manifest.json",
+      "bytes": 1258,
+      "sha256": "b51b590af6416c6e5d6e2baca91907a789dbf811f029102e9fffb6089fabf395"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/preview.webp",
+      "bytes": 66186,
+      "sha256": "d1df75927a9e24cc06dd2bf1ec41866d51d90c0ca8fe13d1fec8a3248871af66"
+    },
+    {
+      "path": "themes/builtin/rose-carpet-star/theme.json",
+      "bytes": 4008,
+      "sha256": "d493899f05c75512a7e7baf2ce02a9257c03ad74c30bfc328200cd346252b9a0"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/LICENSE.md",
+      "bytes": 3247,
+      "sha256": "c53591e086a3f828e1af33797e76f0f91243237b312f60ebc3abd10e087503b1"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/assets/background.webp",
+      "bytes": 117434,
+      "sha256": "39e7e3f488a1c4940f1e8edf392351c3a22e1b04c29f3c8df1b251461539763c"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/assets/profile-avatar.webp",
+      "bytes": 9334,
+      "sha256": "dc7a8a40ddab16fb554f02cdbed913c03b65d323dfef91902aa1797128a30e60"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/assets/suggestion-card1.webp",
+      "bytes": 5414,
+      "sha256": "2647da18ef18104734ded86b664f64fd0474cd0bae025bfb90a99aedaee35c26"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/assets/suggestion-card2.webp",
+      "bytes": 6384,
+      "sha256": "21b66becc53737d52e6e4339c8de6cb45b775979a56006f212e0566a87cbd0c4"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/assets/suggestion-card3.webp",
+      "bytes": 7320,
+      "sha256": "671f22c76a9a6ffb5f56b5e8e6a3d763155324dbbd702b54c3563dc042773c9a"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/assets/suggestion-card4.webp",
+      "bytes": 6156,
+      "sha256": "ceb4d8de850073442aa8eefa34a7c538ca1f5fd74bec81a5c1fe7e4bff2852f0"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/fonts/display.woff2",
+      "bytes": 6528,
+      "sha256": "ee6acc5ad5349018f9ca71fab8118144160e110838931874150a1ac3f97db38d"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/manifest.json",
+      "bytes": 1394,
+      "sha256": "ee2afe1a84e1ddb579f28d3044274c1ff52169d4a35e6383bb89595726d3e5d8"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/preview.webp",
+      "bytes": 31770,
+      "sha256": "ebf51286b0ee31a932e352de4693737ec7c938f343ffca9463f8e199168e5d79"
+    },
+    {
+      "path": "themes/builtin/tibo-cyber-core/theme.json",
+      "bytes": 4939,
+      "sha256": "3f05b6ffcb7924df092ce054c396e3ee4712bc59ef17a4bfdb3eb7e24fe79637"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/LICENSE.md",
+      "bytes": 5685,
+      "sha256": "55ebd371053baa8401f93ce134c88c3d662dea5067464cad828ed68f303d1306"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/background.webp",
+      "bytes": 169602,
+      "sha256": "fed8afe7236e5494f1eaa727493ab82df263d0d6f1588df0271531da8582f1e9"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/corner-signature.webp",
+      "bytes": 168038,
+      "sha256": "a9c0c05fc8013451a6b1193f9c073e7291793aa2ac786703c6872ff1ebed46d9"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/hero-signature.webp",
+      "bytes": 129608,
+      "sha256": "370a0e22ea3c177a0062664218b527451d2ac8aa7793c1e7cc6121a8c8aea5c8"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/love-code-create.webp",
+      "bytes": 216826,
+      "sha256": "080cb00ae54f14e4b2756698241e4473d26f97bce9265b44ff41974b11f69ce8"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/profile-avatar.webp",
+      "bytes": 13744,
+      "sha256": "24062dfed88e98da6ea94c263d361c6c307231f42e5cb6c89cb9c75885929418"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/suggestion-card1.webp",
+      "bytes": 10078,
+      "sha256": "c69db342bb74416ceb6855fa197178423fde54b6a0980b591eb9b588815dfa09"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/suggestion-card2.webp",
+      "bytes": 7380,
+      "sha256": "b3eaab2a698974faa4ade58cff3a4770e9260fc71728b298555315e65c1746c5"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/suggestion-card3.webp",
+      "bytes": 8560,
+      "sha256": "494a1555675586a908e474e71675bc596658aefb0ff0ee8fe7c091c3a4d9cb49"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/suggestion-card4.webp",
+      "bytes": 10126,
+      "sha256": "56e64ab7419d9a14fe6219cc0f34cb9511aa6be9f38b91c2449bc98d1219c109"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/assets/vertical-tag.webp",
+      "bytes": 20772,
+      "sha256": "830d8689d9a483b516bfb6255782cbf20f6bb93a270c7182c9e6d56451619dcf"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/fonts/display.woff2",
+      "bytes": 2194136,
+      "sha256": "f943c7337ff42159a70a21555604b8ae0e40599ecb1455b5c7b219f22642cff2"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/manifest.json",
+      "bytes": 2002,
+      "sha256": "e1ad513290c2262299d13ce82fd55d7d178d53d474f987c2ff69c689fa0b273a"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/preview.webp",
+      "bytes": 52314,
+      "sha256": "d445f4ed9061956fa9d2e12fd95e0925454d7be04894a1ef5c3d0ce301b737a5"
+    },
+    {
+      "path": "themes/builtin/yua-mikami-starlight/theme.json",
+      "bytes": 6676,
+      "sha256": "1f7cbfecc8987084814486130c7b70235653659ebdbad0e704be0e5707c5bc86"
+    },
+    {
+      "path": "themes/catalog.json",
+      "bytes": 3159,
+      "sha256": "799969bc593e0ceed70adf1773dba95d737f1e6f486bc8d28b426d8e0b4d6c6e"
+    }
+  ]
+}

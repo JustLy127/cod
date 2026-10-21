@@ -1,0 +1,40 @@
+# Downloaded and built programs are supplied by the release package.
+*.exe
+*.dll
+*.pdb
+*.zip
+/tools/node/node.exe
+/TushanSusuTheme/runtime/OpenChatGPTSkin.exe
+/FoxSpiritCodexBoot/FoxSpiritCodexBoot.exe
+
+# Build caches and package output.
+/.cache/
+/cache/
+/dist/
+/build/
+/artifacts/
+**/bin/
+**/obj/
+*.tmp
+*.pending
+
+# Only the destination computer generates these paths and window identities.
+/setup-result.json
+/build-result.json
+/checksums.json
+/FoxSpiritCodexBoot/logs/
+/FoxSpiritCodexBoot/state/
+/FoxSpiritCodexBoot/.integration/
+/FoxSpiritCodexBoot/qa/
+/TushanSusuTheme/runtime-data/
+/TushanSusuTheme/.integration/
+/TushanSusuTheme/compat/node-path.txt
+*.lnk
+*.log
+
+# Local IDE settings and system metadata.
+/.vs/
+/.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store
