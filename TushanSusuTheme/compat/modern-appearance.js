@@ -1,13 +1,15 @@
 (async () => {
   const key = '__susuModernAppearanceCompatibility';
-  const version = 3;
+  const version = 4;
   const previous = window[key];
   if (previous?.version === version) {
     return true;
   }
-  const mainSelector = 'main[class*="_MainContentSurface_"]';
+  // CSS module names changed in 26.1029. Keep both formats, anchored to a
+  // class-token boundary, and retain the sidebar guard for auxiliary windows.
+  const mainSelector = 'main:is([class*="_MainContentSurface_"],[class^="MainContentSurface-"],[class*=" MainContentSurface-"])';
   const sidebarSelector = 'aside.app-shell-left-panel';
-  const composerSelector = '[class*="_ComposerLayoutRoot_"],[data-composer-body]';
+  const composerSelector = ':is([class*="_ComposerLayoutRoot_"],[class^="ComposerLayoutRoot-"],[class*=" ComposerLayoutRoot-"],[data-composer-body])';
   // Mini and auxiliary windows must keep their own appearance.
   if (!document.querySelector(mainSelector) || !document.querySelector(sidebarSelector)) return false;
   const asset = window.__susuModernAppearanceAsset;
@@ -171,7 +173,7 @@
     stats.verifications++;
     const main = [...document.querySelectorAll(mainSelector)].find(visible) || document.querySelector(mainSelector);
     const sidebar = [...document.querySelectorAll(sidebarSelector)].find(visible) || document.querySelector(sidebarSelector);
-    const paragraph = main?.querySelector('p,[class*="_Paragraph_"],[class*="_MarkdownRoot_"]');
+    const paragraph = main?.querySelector('p,[class*="_Paragraph_"],[class^="Paragraph-"],[class*=" Paragraph-"],[class*="_MarkdownRoot_"],[class^="MarkdownRoot-"],[class*=" MarkdownRoot-"]');
     const editor = [...(main?.querySelectorAll('.ProseMirror[contenteditable="true"],[role="textbox"][contenteditable="true"],textarea') || [])].find(visible);
     const composer = editor?.closest(composerSelector);
     const mainStyle = main && getComputedStyle(main), editorStyle = editor && getComputedStyle(editor);

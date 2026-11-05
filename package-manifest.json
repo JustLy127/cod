@@ -1,13 +1,13 @@
 {
   "name": "cod · 涂山苏苏 Windows 安装包",
-  "packageVersion": "1.0.6",
+  "packageVersion": "1.0.7",
   "launcherVersion": "1.0.4.0",
-  "testedCodexPackageVersion": "26.1013.4894.0",
+  "testedCodexPackageVersion": "26.1029.7803.0",
   "target": "windows-x64",
   "requiredPackageFamily": "OpenAI.Codex_2p2nqsd0c76g0",
   "nodeVersion": "v24.19.0",
   "nodeLicenseSource": "https://raw.githubusercontent.com/nodejs/node/v24.19.0/LICENSE",
-  "builtAt": "2026-10-21T07:53:49.8617772Z",
+  "builtAt": "2026-11-05T02:57:24.4822792Z",
   "originalClientStateIncluded": false,
   "originalShortcutBackupsIncluded": false,
   "loginOrConversationDataIncluded": false

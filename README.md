@@ -6,7 +6,7 @@
 
 ## 下载与安装
 
-先在目标电脑安装官方 Codex Windows 客户端，并使用你自己的账号正常登录一次。当前支持 **Windows x64、默认 C 盘 WindowsApps 安装的商店版**，软件包标识为 `OpenAI.Codex_2p2nqsd0c76g0`；已验证客户端版本为 `26.1013.4894.0`。其他版本或安装位置需要重新验证适配。
+先在目标电脑安装官方 Codex Windows 客户端，并使用你自己的账号正常登录一次。当前支持 **Windows x64、默认 C 盘 WindowsApps 安装的商店版**，软件包标识为 `OpenAI.Codex_2p2nqsd0c76g0`；v1.0.7 已在客户端 `26.1029.7803.0` 验证，并保留旧界面的主题识别规则。其他版本或安装位置需要重新验证适配。
 
 有两种下载方式：
 
@@ -24,6 +24,25 @@
 完整退出后的启动默认最大化；从托盘或最小化恢复时保留窗口当前大小。主题使用轻量方式覆盖聊天、设置等页面，客户端更新后可能需要调整适配代码。
 
 安装包自带的运行工具只服务于本项目；Codex 的登录和云端功能仍需要其正常网络连接。请保留安装文件夹及其中相邻的 `FoxSpiritCodexBoot`、`TushanSusuTheme`、`TushanSusuPet`、`tools` 目录。
+
+## 已安装，但 Codex 更新后背景变白
+
+v1.0.7 修复了 Codex `26.1029.7803.0` 更换界面样式名称后，主题无法识别主窗口的问题。主题后台可能仍在运行，但旧规则会跳过新版主界面。这类兼容问题与登录哪个账号无关。
+
+1. 下载 [最新 Release](https://github.com/JustLy127/cod/releases/latest) 中的 **cod-windows-x64-v1.0.7.zip**，完整解压到一个新的临时文件夹。
+2. 在需要修复的电脑上保存任务，从 Codex 菜单或托盘选择“退出”。只点击窗口右上角 × 通常不会完整退出。
+3. 双击新包根目录的 **Update-Theme.cmd**。它会从已有“Codex - 涂山苏苏”快捷方式找到原安装目录，备份并更新两个主题兼容文件。
+4. 更新成功后，从原来的 **Codex - 涂山苏苏** 快捷方式重新打开。使用这个补丁方式时，可以删除刚解压的临时新包；原安装文件夹需要保留。
+
+更新会保留原来的动画、启动器设置、窗口恢复方式和宠物素材，不需要重新登录或导入宠物。它也会更新原安装包的文件校验记录，失败时尝试恢复备份。更新记录和备份位于原目录的 `TushanSusuTheme\runtime-data`。
+
+如果找不到原快捷方式，或有多个安装目录，可在新包目录打开 Windows PowerShell，指定原安装目录（应包含 `FoxSpiritCodexBoot` 和 `TushanSusuTheme`）：
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Update-Theme.ps1 -InstallRoot "D:\Codex-Susu"
+```
+
+源码 ZIP 需要先运行 `scripts\Build.ps1` 生成文件校验清单；修复已安装电脑时建议直接下载 Release 完整包。项目目前不会自动下载更新，已安装的每台电脑需要分别执行一次补丁。首次安装仍使用 `Install.cmd`。
 
 ## 不同账号能用吗
 
