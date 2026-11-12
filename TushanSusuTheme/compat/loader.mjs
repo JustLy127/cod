@@ -14,7 +14,7 @@ const disabled=path.join(stateRoot,'compat-disabled');
 const args=new Set(process.argv.slice(2));
 const restore=args.has('--restore'),probeOnly=args.has('--probe'),watch=args.has('--watch');
 const appearancePatch=await fs.readFile(path.join(here,'modern-appearance.js'),'utf8');
-const appearanceVersion=4;
+const appearanceVersion=5;
 const artifact=JSON.parse(await fs.readFile(path.join(here,'adapter-manifest.json'),'utf8'));
 const digest=crypto.createHash('sha256').update(artifact.adapterId+'\n'+artifact.probeExpression+'\n'+artifact.source).digest('hex');
 if(digest!=='2a6c596810108fc5b5b14fb37c64acdcab8affa467404b06dfc2fe3162748f62'||artifact.sha256!==digest)throw Error('Reviewed legacy cleanup adapter hash mismatch');

@@ -1,6 +1,6 @@
 (async () => {
   const key = '__susuModernAppearanceCompatibility';
-  const version = 4;
+  const version = 5;
   const previous = window[key];
   if (previous?.version === version) {
     return true;
@@ -138,8 +138,10 @@
     }
     ${sidebarSurface} .sidebar-navigation{background-color:transparent!important;}
     ${composerSurface}{background:${panel}!important;color:${text}!important;border-color:${border}!important;}
+    /* Pair tooltip text and background. The positioning wrapper stays transparent. */
+    ${scope} [role="tooltip"]{background-color:${panel}!important;color:${text}!important;border-color:${border}!important;}
     ${scope} :is([role="menu"],[role="dialog"],[role="alertdialog"],[role="listbox"],
-      [data-radix-popper-content-wrapper]){background-color:${panel}!important;color:${text}!important;}
+      [data-radix-popper-content-wrapper]:not(:has([role="tooltip"]))){background-color:${panel}!important;color:${text}!important;}
     ${scope} :is([role="menu"],[role="dialog"],[role="alertdialog"],[role="listbox"]) :is(input,textarea,[contenteditable="true"]){background:${panel}!important;color:${text}!important;}
     ${mainSurface},${sidebarSurface},${composerSurface},
     ${scope} :is([role="menu"],[role="dialog"],[role="alertdialog"],[role="listbox"],[class*="backdrop-blur"]){backdrop-filter:none!important;-webkit-backdrop-filter:none!important;}
