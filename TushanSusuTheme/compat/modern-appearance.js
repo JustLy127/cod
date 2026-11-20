@@ -1,13 +1,12 @@
 (async () => {
   const key = '__susuModernAppearanceCompatibility';
-  const version = 5;
+  const version = 6;
   const previous = window[key];
   if (previous?.version === version) {
     return true;
   }
-  // CSS module names changed in 26.1029. Keep both formats, anchored to a
-  // class-token boundary, and retain the sidebar guard for auxiliary windows.
-  const mainSelector = 'main:is([class*="_MainContentSurface_"],[class^="MainContentSurface-"],[class*=" MainContentSurface-"])';
+  // Prefer the shell's own surface marker, with both legacy class names as fallbacks.
+  const mainSelector = 'main:is([data-app-shell-main-surface],[class*="_MainContentSurface_"],[class^="MainContentSurface-"],[class*=" MainContentSurface-"])';
   const sidebarSelector = 'aside.app-shell-left-panel';
   const composerSelector = ':is([class*="_ComposerLayoutRoot_"],[class^="ComposerLayoutRoot-"],[class*=" ComposerLayoutRoot-"],[data-composer-body])';
   // Mini and auxiliary windows must keep their own appearance.
@@ -137,6 +136,8 @@
       color:#33252f!important;
     }
     ${sidebarSurface} .sidebar-navigation{background-color:transparent!important;}
+    /* The profile route has an opaque backdrop over the shell artwork. */
+    ${mainSurface} .bg-surface:has(> [data-profile-scroll]){background-color:transparent!important;}
     ${composerSurface}{background:${panel}!important;color:${text}!important;border-color:${border}!important;}
     /* Pair tooltip text and background. The positioning wrapper stays transparent. */
     ${scope} [role="tooltip"]{background-color:${panel}!important;color:${text}!important;border-color:${border}!important;}

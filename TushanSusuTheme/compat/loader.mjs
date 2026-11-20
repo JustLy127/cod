@@ -14,7 +14,7 @@ const disabled=path.join(stateRoot,'compat-disabled');
 const args=new Set(process.argv.slice(2));
 const restore=args.has('--restore'),probeOnly=args.has('--probe'),watch=args.has('--watch');
 const appearancePatch=await fs.readFile(path.join(here,'modern-appearance.js'),'utf8');
-const appearanceVersion=5;
+const appearanceVersion=6;
 const artifact=JSON.parse(await fs.readFile(path.join(here,'adapter-manifest.json'),'utf8'));
 const digest=crypto.createHash('sha256').update(artifact.adapterId+'\n'+artifact.probeExpression+'\n'+artifact.source).digest('hex');
 if(digest!=='2a6c596810108fc5b5b14fb37c64acdcab8affa467404b06dfc2fe3162748f62'||artifact.sha256!==digest)throw Error('Reviewed legacy cleanup adapter hash mismatch');
@@ -67,11 +67,11 @@ async function themePayload(){
   return payload={asset};
 }
 const shellProbe=String.raw`(()=>({
-  mainApp:Boolean(document.querySelector('aside.app-shell-left-panel')&&document.querySelector('main:is([class*="_MainContentSurface_"],[class^="MainContentSurface-"],[class*=" MainContentSurface-"])')),
+  mainApp:Boolean(document.querySelector('aside.app-shell-left-panel')&&document.querySelector('main:is([data-app-shell-main-surface],[class*="_MainContentSurface_"],[class^="MainContentSurface-"],[class*=" MainContentSurface-"])')),
   version:window.__susuModernAppearanceCompatibility?.version??0,
-  ready:Boolean(document.documentElement.hasAttribute('data-susu-runtime-appearance')&&document.querySelector('style[data-susu-modern-appearance]')?.isConnected),
+  ready:Boolean(document.documentElement?.hasAttribute('data-susu-runtime-appearance')&&document.querySelector('style[data-susu-modern-appearance]')?.isConnected),
   legacy:Boolean(document.querySelector('[data-open-chatgpt-skin="theme"]')||window.__susuModernComposerCompatibility||window.__openChatgptSkinSurfaceObserver),
-  owned:Boolean(document.documentElement.hasAttribute('data-susu-runtime-appearance')||document.querySelector('[data-open-chatgpt-skin="theme"]'))
+  owned:Boolean(document.documentElement?.hasAttribute('data-susu-runtime-appearance')||document.querySelector('[data-open-chatgpt-skin="theme"]'))
 }))()`;
 async function cleanup(c){
   await c.evaluate('(()=>{window.__susuModernComposerCompatibility?.restore();window.__susuModernAppearanceCompatibility?.restore();delete window.__susuModernAppearanceAsset;return true})()');
