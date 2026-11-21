@@ -1,6 +1,6 @@
 (async () => {
   const key = '__susuModernAppearanceCompatibility';
-  const version = 6;
+  const version = 7;
   const previous = window[key];
   if (previous?.version === version) {
     return true;
@@ -104,6 +104,9 @@
     --app-color-border-application-menu-separator`, border);
   set('--color-token-focus-border --input-outline-border-color-focus', accent);
   set('--color-token-scrollbar-slider-background --color-token-scrollbar-slider-hover-background --color-token-scrollbar-slider-active-background', '#b998a680');
+  // Native tooltips read these tokens even when their visible surface has no tooltip role.
+  set('--color-background-tooltip', panel);
+  set('--color-text-tooltip', text);
   set('--tooltip-text-info-color --tooltip-text-warning-color --tooltip-text-success-color', secondary);
 
   const style = document.createElement('style');
